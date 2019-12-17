@@ -1,5 +1,7 @@
 ---
-- host: all
-  name: deploy motd
+- name: Deploy site web infrastructure
+  hosts: sitea
+  become: yes
+
   roles:
-   - jtyr.motd
+    - jtyr.motd
